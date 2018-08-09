@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/rr_top"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/hotel_image">
+
+        <TextView android:id="@+id/txt_example3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="Hotel And Restaurant"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey_font"
+            android:shadowColor="@color/text_shadow_white"
+            android:shadowDx="-4"
+            android:shadowDy="-4"
+            android:shadowRadius="2"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/rr_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <LinearLayout
+                android:id="@+id/ll_room_booking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/back_ground_view">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue_dim"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/white"
+                        android:padding="6dp"
+                        android:src="@drawable/room_booking_icon"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Room Booking"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_order_food"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/back_ground_view">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/redish"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/white"
+                        android:padding="6dp"
+                        android:src="@drawable/order_food_icon"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Order Food"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <LinearLayout
+                android:id="@+id/ll_book_cap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/back_ground_view">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fab_color_pressed"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/white"
+                        android:padding="6dp"
+                        android:src="@drawable/cap_booking_icon"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Book Cab"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_room_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/back_ground_view">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_like_counter"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/white"
+                        android:padding="6dp"
+                        android:src="@drawable/room_service_icon"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Room Service"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/ignored_view"
+        android:gravity="center">
+
+
+
+   <!--    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:textColor="@android:color/white"
+            android:text="2. Click me to open menu"
+            android:textSize="17sp"
+            android:padding="12dp"
+            android:id="@+id/btn_open_menu"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>-->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/ignored_view"
+        android:layout_alignParentBottom="true">
+
+
+    </FrameLayout>
+
+</RelativeLayout>

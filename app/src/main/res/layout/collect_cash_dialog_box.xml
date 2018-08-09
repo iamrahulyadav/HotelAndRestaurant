@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/light_red"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fareTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FARE"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/cadTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAD "
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/fare"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="220"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer: "/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="-----"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/edit_text_fare"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:hint="Enter Amount Received"
+                android:background="@drawable/rounded_text_edittext_transparent"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <RelativeLayout
+            android:id="@+id/checkin_RL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/collect_cash_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collect Cash"
+                android:textColor="@color/blue"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

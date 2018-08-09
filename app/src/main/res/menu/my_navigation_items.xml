@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_all"
+        android:title="ALL"
+        android:icon="@drawable/all" />
+    <item android:id="@+id/action_cabs"
+        android:title="RIDES"
+        android:icon="@drawable/cabs_plain" />
+    <item android:id="@+id/action_rooms"
+        android:title="ROOMS"
+        android:icon="@drawable/rooms" />
+    <item android:id="@+id/action_rv"
+        android:title="RV"
+        android:icon="@drawable/rv" />
+    <item android:id="@+id/action_more"
+        android:icon="@drawable/more"
+        android:title="More" />
+</menu>

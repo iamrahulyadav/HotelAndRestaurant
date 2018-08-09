@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shap_transperent">
+
+    <RelativeLayout
+        android:id="@+id/rl_single_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/verticall_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/fab_color_pressed"
+            android:text="Sample Text"/>
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/circle"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/tv_away"
+            android:layout_below="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Ride 15 mins Away"
+            android:textColor="@color/fab_color_pressed"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_below="@+id/tv_away"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Ride 15 mins Away"
+            android:textColor="@color/fab_color_pressed"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

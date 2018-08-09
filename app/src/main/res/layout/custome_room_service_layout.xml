@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shoaibnwar.hotelandrestaurant.Activities.RoomServiceActivity"
+    android:background="@drawable/abc_back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_titl_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="@color/text_like_counter"
+                android:text="Repairing Service"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_back_arrow"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/arrow_back"
+                    android:tint="@color/text_like_counter"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_roomservice_et"
+            android:layout_below="@+id/rl_titl_bar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/shap_transperent">
+
+            <EditText
+                android:id="@+id/ed_text_room_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Enter Service you want"
+                android:gravity="top"
+                android:padding="10dp"
+                android:textColorHint="@color/text_like_counter_hint"
+                android:textColor="@color/text_like_counter"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_like_counter">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:text="Submit"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

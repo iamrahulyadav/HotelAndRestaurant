@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/rl_item_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_transperent">
+
+                        <TextView
+                            android:id="@+id/tv_item_name_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/redish"
+                            android:text="Wholesome Breakfast"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:padding="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/bissell_breakfast"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_price_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="Rs.450"
+                            android:textColor="@color/redish"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_item_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_transperent">
+
+                        <TextView
+                            android:id="@+id/tv_item_name_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/redish"
+                            android:text="Samosas &amp; Tea"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:padding="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/samosas"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_price_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="Rs.140"
+                            android:textColor="@color/redish"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/rl_item_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_transperent">
+
+                        <TextView
+                            android:id="@+id/tv_item_name_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/redish"
+                            android:text="Coffee &amp; Biscuits"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:scaleType="fitXY"
+                            android:padding="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/coffee"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_price_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="Rs.210"
+                            android:textColor="@color/redish"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_item_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_transperent">
+
+                        <TextView
+                            android:id="@+id/tv_item_name_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/redish"
+                            android:text="Anda Paratha"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:padding="30dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/anda_paratha"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_price_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="Rs.270"
+                            android:textColor="@color/redish"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/rl_item_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_transperent">
+
+                        <TextView
+                            android:id="@+id/tv_item_name_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/redish"
+                            android:text="Chicken Burgers"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:padding="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/burger"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_price_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="Rs.299"
+                            android:textColor="@color/redish"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_item_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_transperent">
+
+                        <TextView
+                            android:id="@+id/tv_item_name_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/redish"
+                            android:text="Juice &amp; Breads"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:padding="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/juice_coffee"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_price_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="Rs.395"
+                            android:textColor="@color/redish"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/rl_item_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_transperent">
+
+                        <TextView
+                            android:id="@+id/tv_item_name_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/redish"
+                            android:text="Halwa &amp; Puri"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:padding="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/halwa_poori"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_price_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="Rs.395"
+                            android:textColor="@color/redish"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_item_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_transperent">
+
+                        <TextView
+                            android:id="@+id/tv_item_name_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/redish"
+                            android:text="Breakfast Tarts"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:padding="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/patees_burgur"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_price_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="Rs.395"
+                            android:textColor="@color/redish"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

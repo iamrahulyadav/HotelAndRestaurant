@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abc_back"
+    tools:context="com.shoaibnwar.hotelandrestaurant.Activities.VerticalListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/fab_color_pressed"
+            android:text="Available Cabs"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_image_back_arrow"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_back"
+                android:tint="@color/fab_color_pressed"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/rl_top_bar"
+        android:id="@+id/rc_list"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

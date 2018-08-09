@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/myViewPager"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                </android.support.v4.view.ViewPager>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/back_arrow_Img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/arrowback" />
+
+                    <ImageView
+                        android:id="@+id/shareImg"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/share"
+                        android:layout_toLeftOf="@+id/wishListImg"
+                        android:layout_marginRight="30dp"/>
+
+                    <ImageView
+                        android:id="@+id/wishListImg"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/heartempty"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@color/light_grey"
+                    android:layout_marginTop="100dp"
+                    android:visibility="gone" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:textColor="@color/white"
+                        android:layout_toLeftOf="@+id/price"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="200"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Test Description"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/reviews_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Review"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/guestsImg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/guests"/>
+                        <TextView
+                            android:id="@+id/maxTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Max "
+                            android:layout_below="@+id/guestsImg" />
+                        <TextView
+                            android:id="@+id/guests_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_toRightOf="@+id/maxTag"
+                            android:layout_below="@+id/guestsImg"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/brandImg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/make"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/brand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Honda"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/brandImg" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/wifiImg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/wifi"/>
+                        <TextView
+                            android:id="@+id/wifi_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No Wifi"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/wifiImg" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/saloonImg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/cabs_plain"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/saloon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/saloonImg" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A front wheel safe haven"/>
+
+                        <TextView
+                            android:id="@+id/driver_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Test Description"
+                            android:maxLines="2"/>
+
+                    </LinearLayout>
+
+                    <com.shoaibnwar.hotelandrestaurant.Utils.CircleImageView
+                        android:id="@+id/driverImageView"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/mini"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Car Milage"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="33 kmpl"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorPrimary"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ride Comfort"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class A"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorPrimary"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="On-Time"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="95%"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorPrimary"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Driver Ratings"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="nil"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorPrimary"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/check_availability"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/light_red"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendar="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_dim">
+
+    <RelativeLayout
+        android:id="@+id/rl_cros_clear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/iv_cross"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/cross"
+            android:tint="@color/white"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_clear_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="Clear"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_checkin_check_out"
+        android:layout_below="@+id/rl_cros_clear"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="Check-in"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/diagonal_line"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Check-out"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <com.shoaibnwar.hotelandrestaurant.Calendar.DayPickerView
+        android:id="@+id/pickerView"
+        android:layout_below="@+id/rl_checkin_check_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        calendar:drawRoundRect="true"
+        android:layout_above="@+id/tv_next"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Next"
+        android:paddingTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rrRL"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_background"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/loading_img_rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loadingred"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

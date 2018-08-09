@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup Time"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/pickup_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:text="Today, 03:19 PM" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:text="adnan786" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PickUp Location"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:text="Arfa Karim Technology Park, Lahore." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DropOff Location"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/dropoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:text="Customer will guide." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/accept_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Accept"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/light_red"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/reject_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Reject"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/grey"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

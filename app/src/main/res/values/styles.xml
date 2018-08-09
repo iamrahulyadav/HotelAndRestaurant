@@ -1,0 +1,225 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="fragment_text">
+        <item name="android:textColor">#ffacacac</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorWhite</item>
+    </style>
+
+
+
+    <style name="custom_no_bg_progress_bar" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">#f4f4f4</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+
+
+
+    <style name="FadeDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="sideMargins">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="sideMarginsLagre">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="topBottomMargins">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="topBottomMarginsLarge">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+
+    <style name="Swipe_Layout_Top">
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_marginTop">-10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="Swipe_Layout_Button">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="Swipe_Layout_BtnIcon">
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+    >
+
+    <style name="Swipe_Layout_CheckMark_Visibility">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="tracker_img_padding">
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="tracker_next_btn">
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="tracker_not_tracked">
+        <item name="android:textSize">18dp</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="tracker_val_LL">
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+    <style name="home_swipe_heading_unit">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="home_swipe_nutr_vals">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="home_swipe_nutr_unit">
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <declare-styleable name="expandableLayout">
+        <attr name="ael_duration" format="integer" />
+        <attr name="ael_expanded" format="boolean" />
+        <attr name="ael_defaultChildIndex" format="integer" />
+        <attr name="ael_defaultPosition" format="dimension" />
+        <attr name="ael_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="ael_interpolator" format="enum">
+            <enum name="accelerateDecelerate" value="0" />
+            <enum name="accelerate" value="1" />
+            <enum name="anticipate" value="2" />
+            <enum name="anticipateOvershoot" value="3" />
+            <enum name="bounce" value="4" />
+            <enum name="decelerate" value="5" />
+            <enum name="fastOutLinearIn" value="6" />
+            <enum name="fastOutSlowIn" value="7" />
+            <enum name="linear" value="8" />
+            <enum name="linearOutSlowIn" value="9" />
+            <enum name="overshoot" value="10" />
+        </attr>
+    </declare-styleable>
+
+    <!-- Custom Styles -->
+    <style name="normalFourteen">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="normalSeventeen">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="marginAll">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="normalThriteen">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="normalThirty">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="normalTwentySix">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="normalEighteen">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <declare-styleable name="IconRoundCornerProgress"><attr format="integer" name="rcIconSrc"/><attr format="dimension" name="rcIconSize"/><attr format="dimension" name="rcIconWidth"/><attr format="dimension" name="rcIconHeight"/><attr format="dimension" name="rcIconPadding"/><attr format="dimension" name="rcIconPaddingLeft"/><attr format="dimension" name="rcIconPaddingRight"/><attr format="dimension" name="rcIconPaddingTop"/><attr format="dimension" name="rcIconPaddingBottom"/><attr format="color" name="rcIconBackgroundColor"/></declare-styleable>
+
+
+    <style name="RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPink</item>
+    </style>
+
+
+</resources>
+

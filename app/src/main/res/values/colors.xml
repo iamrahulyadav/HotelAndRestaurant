@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_blue">#2863a4</color>
+
+    <color name="black">#000000</color>
+    <color name="white" >#FFF</color>
+    <color name="off_white">#FDFDFD</color>
+    <color name="my_color">#f9f9f4</color>
+    <color name="white_transparent">#a5fafafa</color>
+    <color name="grey">#646361</color>
+    <color name="red">#FFFF0000</color>
+    <color name="light_red">#FF4E4E</color>
+    <color name="green">#00ff00</color>
+    <color name="green2">#128312</color>
+    <color name="orange">#FF8C00</color>
+    <color name="brown">#f5b35015</color>
+    <color name="light_grey">#DCDCDC</color>
+    <color name="light_grey_tr">#e1dcdcdc</color>
+    <color name="light_grey_t">#edc1c0c0</color>
+    <color name="dark_grey">#696969</color>
+    <color name="blue">#0000ff</color>
+    <color name="light_blue">#4271f4</color>
+    <color name="light_blue1">#28b7f1</color>
+
+    <color name="blue_dim">#01727D</color>
+    <color name="colorPink">#de6177</color>
+    <color name="redish">#840c2c</color>
+
+    <color name="color_off_white">#faf9f9</color>
+    <color name="color_text_hint">#949090</color>
+    <color name="color_text_hint_redish">#b8801330</color>
+
+    <color name="color_line_color">#c4c1c1</color>
+    <color name="color_line_color_1">#75c4c1c1</color>
+    <color name="oragne_red">#f63b01</color>
+
+    <color name="colorWhite">#fff</color>
+
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#edeaea</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+
+    <color name="calendarBlock">#000</color>
+
+    <color name="cardColor">#ab33</color>
+
+    <color name="normal_day">#f1eeee</color>
+    <color name="selected_day_background">#E75F49</color>
+    <color name="selected_day_text">#fff2f2f2</color>
+
+    <color name="fab_color_pressed">#04562c</color>
+    <color name="fab_color_shadow">#44000000</color>
+    <color name="text_like_counter">#2b5a83</color>
+    <color name="text_like_counter_hint">#89a0b4</color>
+    <color name="paint_color">#dddddd</color>
+
+    <color name="light_font">#FBFBFB</color>
+    <color name="grey_font">#ff9e9e9e</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_shadow_white">#FFFFFF</color>
+
+</resources>

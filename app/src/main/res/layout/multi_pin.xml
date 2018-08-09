@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="13dp">
+
+    <RelativeLayout
+        android:id="@+id/rrRL"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/circle_background">
+
+        <ImageView
+            android:id="@+id/loading_img_rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loadingyellow"/>
+
+        <TextView
+            android:id="@+id/rr_intensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/center_img_rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/googlehome"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nearby"
+            android:textSize="7dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/center_img_rr"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cabRL"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_background"
+        android:layout_marginLeft="32dp">
+
+        <ImageView
+            android:id="@+id/loading_img_cab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loadingred"/>
+
+        <TextView
+            android:id="@+id/cab_intensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/center_img_cab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/googlecab"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mins"
+            android:textSize="7dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/center_img_cab"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvRL"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="62dp"
+        android:background="@drawable/circle_background">
+
+        <ImageView
+            android:id="@+id/loading_img_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loadingblue"/>
+
+        <TextView
+            android:id="@+id/rv_intensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/center_img_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/googlerv"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nearby"
+            android:textColor="@color/black"
+            android:textSize="7dp"
+            android:layout_below="@+id/center_img_rv"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/cabRL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
