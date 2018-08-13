@@ -6,7 +6,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/light_red">
+        android:background="@color/colorPink">
 
         <TextView
             android:layout_width="match_parent"
@@ -33,6 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Customer: "/>
 
             <TextView
@@ -53,6 +54,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Check In: "/>
 
             <TextView
@@ -73,6 +75,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Check Out: "/>
 
             <TextView
@@ -93,6 +96,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Room: "/>
 
             <TextView
@@ -113,6 +117,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Nights: "/>
 
             <TextView
@@ -133,6 +138,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Rent: "/>
 
             <TextView
@@ -153,7 +159,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Person: "/>
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="13dp"
+                android:text="Person: "
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/person"
@@ -181,6 +192,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Check In"
+            android:textColor="@color/black"
             android:layout_centerInParent="true"/>
     </RelativeLayout>
 

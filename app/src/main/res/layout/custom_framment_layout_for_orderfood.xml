@@ -44,7 +44,7 @@
                         android:layout_weight="1"
                         android:text="Name: "
                         android:gravity="center_vertical"
-                        android:textColor="@color/redish"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="20dp"/>
 
                     <TextView
@@ -55,7 +55,7 @@
                         android:text="Chicken Sandwich"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
-                        android:textColor="@color/redish" />
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -71,7 +71,7 @@
                         android:gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="Unit Price: "
-                        android:textColor="@color/redish"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="20dp"/>
 
                     <TextView
@@ -82,7 +82,7 @@
                         android:layout_weight="1"
                         android:text="Rs.450"
                         android:textStyle="bold"
-                        android:textColor="@color/redish" />
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -99,7 +99,7 @@
                         android:text="Quantities: "
                         android:layout_gravity="center_vertical"
                         android:gravity="center_vertical"
-                        android:textColor="@color/redish"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="20dp"/>
 
                     <LinearLayout
@@ -115,7 +115,7 @@
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:src="@drawable/remove_item"
-                            android:tint="@color/redish"
+                            android:tint="@color/black"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:layout_centerVertical="true"/>
@@ -135,7 +135,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
-                                android:textColor="@color/redish"
+                                android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:text="1"/>
 
@@ -147,7 +147,7 @@
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:src="@drawable/add_more"
-                            android:tint="@color/redish"
+                            android:tint="@color/black"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
                             android:layout_alignParentRight="true"/>
@@ -169,7 +169,7 @@
                         android:layout_weight="1"
                         android:text="Detail: "
                         android:gravity="center_vertical"
-                        android:textColor="@color/redish"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="20dp"/>
 
                     <TextView
@@ -182,7 +182,7 @@
                         android:textStyle="bold"
                         android:layout_marginTop="2dp"
                         android:layout_marginBottom="2dp"
-                        android:textColor="@color/redish" />
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -199,7 +199,7 @@
                         android:layout_weight="1"
                         android:text="Total Price: "
                         android:gravity="center_vertical"
-                        android:textColor="@color/redish"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="20dp"/>
 
                     <TextView
@@ -210,7 +210,7 @@
                         android:text="Rs.450"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
-                        android:textColor="@color/redish" />
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
             </LinearLayout>

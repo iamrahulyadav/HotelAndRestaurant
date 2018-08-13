@@ -11,10 +11,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.shoaibnwar.hotelandrestaurant.Activities.HomeActivity;
+import com.shoaibnwar.hotelandrestaurant.Activities.HomeMoreOptions;
 import com.shoaibnwar.hotelandrestaurant.Activities.MapsActivity;
 import com.shoaibnwar.hotelandrestaurant.Activities.OrderFood;
 import com.shoaibnwar.hotelandrestaurant.Activities.RoomBookingActivity;
@@ -32,6 +35,7 @@ public class HomeFragment extends Fragment {
     private View parentView;
     private ResideMenu resideMenu;
     private LinearLayout ll_room_booking, ll_order_food, ll_room_service, ll_book_cap;
+    private RelativeLayout tv_show_more;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -41,6 +45,7 @@ public class HomeFragment extends Fragment {
         ll_order_food  = (LinearLayout) parentView.findViewById(R.id.ll_order_food);
         ll_room_service  = (LinearLayout) parentView.findViewById(R.id.ll_room_service);
         ll_book_cap  = (LinearLayout) parentView.findViewById(R.id.ll_book_cap);
+        tv_show_more = (RelativeLayout) parentView.findViewById(R.id.tv_show_more);
 
         //roo booking click listsner
         ll_room_booking.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +81,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        showMaoreClickHandler();
         return parentView;
     }
 
@@ -95,4 +101,13 @@ public class HomeFragment extends Fragment {
         resideMenu.addIgnoredView(ignored_view);
     }
 
+    private void showMaoreClickHandler()
+    {
+        tv_show_more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), HomeMoreOptions.class));
+            }
+        });
+    }
 }

@@ -125,7 +125,7 @@ public class Contacts extends RecyclerView.Adapter<Contacts.MyViewHolder>  {
             holder.tv_time.setText(time);
             if (!assignStatus.equals("0")) {
                 holder.tv_assign.setText("Assigned");
-                holder.tv_assign.setTextColor(mContext.getResources().getColor(R.color.blue));
+                holder.tv_assign.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
             }
 
         }

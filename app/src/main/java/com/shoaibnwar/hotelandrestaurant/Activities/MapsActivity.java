@@ -775,11 +775,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         latitude = gpsTracker.getLatitude();
         longitude = gpsTracker.getLongitude();
 
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, ACCESS_FINE_LOCATION);
-            return;
-        }
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                    ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, ACCESS_FINE_LOCATION);
+                return;
+            }
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setCompassEnabled(true);
 
@@ -800,7 +800,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     if (!manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
                         showLocationOffDialog();
                     } else {
-                        if (ActivityCompat.checkSelfPermission(MapsActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
+                        if (ActivityCompat.checkSelfPermission(MapsActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION
+
+                        )
                                 != PackageManager.PERMISSION_GRANTED) {
                             // TODO: Consider calling
 

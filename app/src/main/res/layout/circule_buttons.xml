@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hotel_with_pool_more_back">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue_dim">
+
+            <RelativeLayout
+                android:id="@+id/rl_back_arrow"
+                android:layout_width="80dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/arrow_up"
+                    android:tint="@color/white"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="More Options"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/rl_top_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="1">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shadow">
+                    
+                    <ImageView
+                        android:id="@+id/iv_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/room_booking_icon"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+                    
+                    <TextView
+                        android:layout_below="@+id/iv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Rooms"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+                    
+                </RelativeLayout></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shadow_2">
+
+                    <ImageView
+                        android:id="@+id/iv_2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/order_food_icon"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Order Food"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+                    
+                </RelativeLayout></RelativeLayout></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circule_shadow_3">
+
+                    <ImageView
+                        android:id="@+id/iv_3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/cap_booking_icon"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Cab"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shap_4">
+
+                    <ImageView
+                        android:id="@+id/iv_4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/room_service_icon"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Room Service"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shap_5">
+
+                    <ImageView
+                        android:id="@+id/iv_5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/pool_icon"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Pools"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_6">
+
+                    <ImageView
+                        android:id="@+id/iv_6"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/hotel_club_icon"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Clubs"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shap_8">
+
+                    <ImageView
+                        android:id="@+id/iv_7"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/salon_icon"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Salon"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shap_9">
+
+                    <ImageView
+                        android:id="@+id/iv_8"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/laundery_icon"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Laundry"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shap_10">
+                    <ImageView
+                        android:id="@+id/iv_9"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/hotel_spa"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="SPA"
+                        android:textSize="10sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shap_11">
+
+                    <ImageView
+                        android:id="@+id/iv_10"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/house_keping"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="House Keeping"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shadow">
+                    <ImageView
+                        android:id="@+id/iv_11"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/home_appliences"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Home Applineces"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shap_12">
+
+                    <ImageView
+                        android:id="@+id/iv_12"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/hotel_concierge"
+                        android:tint="@color/white"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Concierege"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout></RelativeLayout></LinearLayout>
+        
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

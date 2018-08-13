@@ -26,17 +26,18 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
                     android:src="@drawable/arrow_back"
-                    android:tint="@color/redish"/>
+                    android:tint="@color/colorAccent"/>
             </RelativeLayout>
 
             <TextView
-                android:layout_toRightOf="@+id/rl_back_arrow"
-                android:layout_centerVertical="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textColor="@color/redish"
-                android:text="Orders Detail"/>
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/rl_back_arrow"
+                android:layout_toRightOf="@+id/rl_back_arrow"
+                android:text="Orders Detail"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_total_sum"
@@ -46,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="@color/redish"
+                android:textColor="@color/colorAccent"
                 android:text="Total Sum Rs.250"/>
 
         </RelativeLayout>
@@ -64,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_alignParentBottom="true"
-            android:background="@color/redish">
+            android:background="@color/colorPink">
 
             <TextView
                 android:layout_width="wrap_content"

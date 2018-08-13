@@ -21,7 +21,7 @@
                 android:layout_centerInParent="true"
                 android:textStyle="bold"
                 android:textColor="@color/text_like_counter"
-                android:text="Repairing Service"/>
+                android:text="Room Service"/>
 
             <RelativeLayout
                 android:id="@+id/rl_back_arrow"
@@ -37,10 +37,101 @@
             </RelativeLayout>
         </RelativeLayout>
 
+        <LinearLayout
+            android:id="@+id/rl_checkboxes"
+            android:layout_below="@+id/rl_titl_bar"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="Room Service"
+                        android:textColor="@color/text_like_counter"/>
+                    <CheckBox
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:buttonTint="@color/text_like_counter"/>
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Laundry"
+                    android:textColor="@color/text_like_counter"/>
+                <CheckBox
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/text_like_counter"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="TV &amp; Home Appliances"
+                    android:textColor="@color/text_like_counter"/>
+                <CheckBox
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/text_like_counter"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Electrical &amp; Plumbing"
+                    android:textColor="@color/text_like_counter"/>
+                <CheckBox
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/text_like_counter"/>
+            </RelativeLayout>
+
+        </LinearLayout>
 
         <RelativeLayout
             android:id="@+id/rl_roomservice_et"
-            android:layout_below="@+id/rl_titl_bar"
+            android:layout_below="@+id/rl_checkboxes"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:background="@drawable/shap_transperent">
@@ -50,7 +141,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                android:hint="Enter Service you want"
+                android:hint="Enter Short Description"
                 android:gravity="top"
                 android:padding="10dp"
                 android:textColorHint="@color/text_like_counter_hint"

@@ -1,5 +1,7 @@
 package com.shoaibnwar.hotelandrestaurant.Utils;
 
+import java.io.ByteArrayInputStream;
+
 /**
  * Created by gold on 7/11/2018.
  */
@@ -12,6 +14,8 @@ public class Urls {
     public static String CHECK_SERVICE_RESPONSE = BASE_URL + "checkServiceResponse";
     public static String SIGN_IN = BASE_URL + "UserLogin";
     public static String SIGN_UP = BASE_URL + "Register_Customers";
+    public static String VERIFY_USER = BASE_URL + "VerifyCode";
+    public static String RESEND_VERIFICATION_CODE = BASE_URL + "SendVerificationCodeonMobile";
     public static String GET_USER_BOOKING = BASE_URL + "getUserBookings";
     public static String GET_ASSEST_HISTORY = BASE_URL + "GetAssetHistory";
     public static String CUSTOMER_CHECK_IN = BASE_URL + "CustomerCheckIn";
@@ -33,7 +37,7 @@ public class Urls {
     public static String Save_Request_New = BASE_URL + "Save_Request_New";
     public static String CancelRequest = BASE_URL + "CancelRequest";
     public static String checkServiceResponse = BASE_URL + "checkServiceResponse";
-    public static String BookRRandRV = BASE_URL + "BookRRandRV";
+    public static String BookRRandRV = BASE_URL + "z";
     public static String FareEstimate = BASE_URL + "FareEstimate";
     public static String checkBookedDates = BASE_URL + "checkBookedDates";
     public static String GetCabBookingHistory = BASE_URL + "GetCabBookingHistory";

@@ -83,7 +83,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Delivery Location"
-                        android:textColor="@color/redish"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:layout_marginTop="5dp"/>
 
@@ -92,14 +92,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Arfa Technology part"
-                        android:textColor="@color/redish"
+                        android:textColor="@color/black"
                         android:layout_marginTop="5dp"/>
                     <TextView
                         android:id="@+id/tv_address_line_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ferozpur Road, Lahore"
-                        android:textColor="@color/redish" />
+                        android:textColor="@color/black" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -143,7 +143,7 @@
                     android:id="@+id/tv_vertical_line"
                     android:layout_width="1dp"
                     android:layout_height="10dp"
-                    android:background="@color/redish"
+                    android:background="@color/black"
                     android:layout_centerInParent="true"/>
 
                 <LinearLayout
@@ -173,7 +173,7 @@
                 android:id="@+id/bt_arrived"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@color/redish"
+                android:background="@color/colorPink"
                 android:text="Arrived"
                 android:textColor="@color/white" />
 
